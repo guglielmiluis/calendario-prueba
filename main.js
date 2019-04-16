@@ -58,3 +58,8 @@ function numerar() {
     if (dia_semana == 6) { sem = sem + 1; }
   }
 }
+
+function fechaPorDia(año, dia) {
+  var date = new Date(año, 0);
+  return new Date(date.setDate(dia));
+}
